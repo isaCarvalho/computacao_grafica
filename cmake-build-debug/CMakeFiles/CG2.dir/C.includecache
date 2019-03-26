@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isabela/Área de Trabalho/CG2/Color.h
+
+/home/isabela/Área de Trabalho/CG2/Image.h
+
+/home/isabela/Área de Trabalho/CG2/main.c
+stdio.h
+-
+Image.h
+/home/isabela/Área de Trabalho/CG2/Image.h
+Color.h
+/home/isabela/Área de Trabalho/CG2/Color.h
+

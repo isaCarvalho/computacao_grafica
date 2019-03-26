@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/CG2.dir/main.c.o CMakeFiles/CG2.dir/Color.c.o CMakeFiles/CG2.dir/Image.c.o  -o CG2 
