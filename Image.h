@@ -25,4 +25,6 @@ void pintar(Image img, struct Color color, int x, int y);
 
 Image luminancia(Image img);
 
+Image combinacaoImg(Image A, Image B, float t);
+
 #endif //CG2_IMAGE_H

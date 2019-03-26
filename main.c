@@ -52,6 +52,14 @@ int main()
 
     savePng("luminancia.png", img2);
 
+    Image x = loadImage("xadrez.png");
+    Image bonitinha = loadImage("imagemBonitinha.png");
+
+    Image xadrezBonitinho = combinacaoImg(x, bonitinha, 0.5);
+
+    savePng("xadrezBonitinho.png", xadrezBonitinho);
+
+    freeImage(xadrezBonitinho);
     freeImage(img2);
     freeImage(img);
 

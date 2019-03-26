@@ -28,6 +28,11 @@ void freeImage(Image img)
     free(img.data);
 }
 
+/**
+ * Função que carrega uma imagem
+ * @param filename
+ * @return
+ */
 Image loadImage(const char *filename)
 {
     int width, height, nrChannels;
@@ -51,7 +56,8 @@ Image loadImage(const char *filename)
  * @param img
  * @param color
  */
-void initImage(Image img, Color color) {
+void initImage(Image img, Color color)
+{
     drawRetangulo(img, color, 0, 0, img.w, img.h);
 }
 
@@ -129,4 +135,26 @@ Image luminancia(Image img)
     }
 
     return imgl;
+}
+
+/**
+ * Função que retorna uma nova imagem que é combinacao de outras duas
+ * @param A
+ * @param B
+ * @param t
+ * @return
+ */
+Image combinacaoImg(Image A, Image B, float t)
+{
+    Image img = newImage(A.h, B.h);
+
+    for (int i = 0; i < A.h; i++)
+    {
+        for (int j = 0; j < A.w; j++)
+        {
+            pintar(img, lerp(t, *pixel(A, i, j), *pixel(B, i, j)), i, j);
+        }
+    }
+
+    return img;
 }
