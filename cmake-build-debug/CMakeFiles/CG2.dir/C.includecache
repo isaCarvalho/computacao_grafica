@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/isabela/Área de Trabalho/CG2/Color.c
+Color.h
 /home/isabela/Área de Trabalho/CG2/Color.h
+
+/home/isabela/Área de Trabalho/CG2/Color.h
+
+/home/isabela/Área de Trabalho/CG2/Image.c
+Image.h
+/home/isabela/Área de Trabalho/CG2/Image.h
+Color.h
+/home/isabela/Área de Trabalho/CG2/Color.h
+stb_image_write.h
+/home/isabela/Área de Trabalho/CG2/stb_image_write.h
 
 /home/isabela/Área de Trabalho/CG2/Image.h
 
@@ -17,4 +29,20 @@ Image.h
 /home/isabela/Área de Trabalho/CG2/Image.h
 Color.h
 /home/isabela/Área de Trabalho/CG2/Color.h
+
+/home/isabela/Área de Trabalho/CG2/stb_image_write.h
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
+stdlib.h
+-
+string.h
+-
+math.h
+-
+assert.h
+-
 
