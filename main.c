@@ -11,31 +11,13 @@ int main()
 
     initImage(img, preto);
 
-    int cont = -1, conti = 0, i;
+    for(int j = 0; j < img.h; j += 200)
+        for(int i = 0; i < img.w; i += 200)
+            drawRetangulo(img, branco, i, j, i+100, j+100);
 
-    for (int j = 0; j < img.h; j++, cont++)
-    {
-        if (cont >= 100 && cont <= 200)
-            i = 100;
-        else
-            i = 0;
-
-        if (cont == 200)
-            cont = 0;
-
-        for (; i < img.w; i++, conti++)
-        {
-            if (conti == 100)
-            {
-                i += 100;
-                conti = 0;
-            }
-
-
-            Color *p = pixel(img, i, j);
-            *p = branco;
-        }
-    }
+    for(int j = 100; j < img.h; j += 200)
+        for(int i = 100; i < img.w; i += 200)
+            drawRetangulo(img, branco, i, j, i+100, j+100);
 
     savePng("xadrez.png", img);
 

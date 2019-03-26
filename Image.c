@@ -16,14 +16,7 @@ void freeImage(Image img)
 }
 
 void initImage(Image img, Color color) {
-    for(int i = 0; i < img.w; i++)
-    {
-        for(int j = 0; j < img.h; j++)
-        {
-            Color *p = pixel(img, i, j);
-            *p = color;
-        }
-    }
+    drawRetangulo(img, color, 0, 0, img.w, img.h);
 }
 
 void savePng(const char *filename, Image img)
@@ -34,4 +27,16 @@ void savePng(const char *filename, Image img)
 Color *pixel(Image img, int x, int y)
 {
     return img.data + (img.w*y+x);
+}
+
+void drawRetangulo(Image img, Color color, int x1, int y1, int x2, int y2)
+{
+    for (int i = x1; i < x2; i++)
+    {
+        for (int j = y1; j < y2; j++)
+        {
+            Color *p = pixel(img, i, j);
+            *p = color;
+        }
+    }
 }

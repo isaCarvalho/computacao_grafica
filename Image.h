@@ -17,4 +17,6 @@ struct Color *pixel(Image img, int x, int y);
 
 void savePng(const char *filename, Image img);
 
+void drawRetangulo(Image img, struct Color color, int x1, int y1, int x2, int y2);
+
 #endif //CG2_IMAGE_H
