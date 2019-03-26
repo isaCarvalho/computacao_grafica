@@ -7,6 +7,7 @@ CMakeFiles/CG2.dir/Color.c.o: ../Color.h
 CMakeFiles/CG2.dir/Image.c.o: ../Color.h
 CMakeFiles/CG2.dir/Image.c.o: ../Image.c
 CMakeFiles/CG2.dir/Image.c.o: ../Image.h
+CMakeFiles/CG2.dir/Image.c.o: ../stb_image.h
 CMakeFiles/CG2.dir/Image.c.o: ../stb_image_write.h
 
 CMakeFiles/CG2.dir/main.c.o: ../Color.h

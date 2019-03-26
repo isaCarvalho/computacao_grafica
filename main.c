@@ -46,6 +46,13 @@ int main()
     xadrez(img);
     imagemBonitinha(img);
 
+    Image img1 = loadImage("imagemBonitinha.png");
+
+    Image img2 = luminancia(img1);
+
+    savePng("luminancia.png", img2);
+
+    freeImage(img2);
     freeImage(img);
 
     return 0;

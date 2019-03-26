@@ -2,7 +2,10 @@
 #include "Color.h"
 
 #define STB_IMAGE_WRITE_IMPLEMENTATION
+#define STB_IMAGE_IMPLEMENTATION
+
 #include "stb_image_write.h"
+#include "stb_image.h"
 
 /**
  * Função que cria uma imagem
@@ -23,6 +26,24 @@ Image newImage(int h, int w)
 void freeImage(Image img)
 {
     free(img.data);
+}
+
+Image loadImage(const char *filename)
+{
+    int width, height, nrChannels;
+
+    Byte *data = stbi_load(filename, &width, &height, &nrChannels, 0);
+
+    Image img = newImage(height, width);
+
+    for (int i = 0, j = 0; i < (img.w*img.h); i++, j+=3)
+    {
+        img.data[i].r = data[j];
+        img.data[i].g = data[j+1];
+        img.data[i].b = data[j+2];
+    }
+
+    return img;
 }
 
 /**
@@ -83,4 +104,29 @@ void pintar(Image img, Color color, int x, int y)
 {
     Color *p = pixel(img, x, y);
     *p = color;
+}
+
+/**
+ * Função que aplica o filtro luminancia a uma imagem
+ * @param img
+ * @return
+ */
+Image luminancia(Image img)
+{
+    Image imgl = newImage(img.h, img.w);
+
+    for (int i = 0; i < img.w*img.h; i++)
+    {
+        float r = (float) 0.176*img.data[i].r;
+        float g = (float) 0.810*img.data[i].g;
+        float b = (float) 0.011*img.data[i].b;
+
+        Byte v = clamp(r+g+b, 0, 255);
+
+        imgl.data[i].r = v;
+        imgl.data[i].g = v;
+        imgl.data[i].b = v;
+    }
+
+    return imgl;
 }

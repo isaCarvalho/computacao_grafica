@@ -11,6 +11,8 @@ Image newImage(int h, int w);
 
 void freeImage(Image img);
 
+Image loadImage(const char *filename);
+
 void initImage(Image img, struct Color color);
 
 struct Color *pixel(Image img, int x, int y);
@@ -20,5 +22,7 @@ void savePng(const char *filename, Image img);
 void drawRetangulo(Image img, struct Color color, int x1, int y1, int x2, int y2);
 
 void pintar(Image img, struct Color color, int x, int y);
+
+Image luminancia(Image img);
 
 #endif //CG2_IMAGE_H

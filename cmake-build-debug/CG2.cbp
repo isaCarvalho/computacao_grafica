@@ -93,6 +93,12 @@
 		<Unit filename="/home/isabela/Área de Trabalho/CG2/main.c">
 			<Option target="CG2"/>
 		</Unit>
+		<Unit filename="/home/isabela/Área de Trabalho/CG2/stb_image.h">
+			<Option target="CG2"/>
+		</Unit>
+		<Unit filename="/home/isabela/Área de Trabalho/CG2/stb_image_write.h">
+			<Option target="CG2"/>
+		</Unit>
 		<Unit filename="/home/isabela/Área de Trabalho/CG2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
