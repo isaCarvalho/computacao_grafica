@@ -7,6 +7,11 @@ typedef struct Image
     struct Color *data;
 } Image;
 
+typedef struct ponto
+{
+    int x, y;
+} Ponto;
+
 Image newImage(int h, int w);
 
 void freeImage(Image img);
@@ -21,7 +26,23 @@ void savePng(const char *filename, Image img);
 
 void drawRetangulo(Image img, struct Color color, int x1, int y1, int x2, int y2);
 
-void pintar(Image img, struct Color color, int x, int y);
+void drawFunction(Image img, struct Color color, int funcao(int, int));
+
+void draw_line(Image img, struct Color color, Ponto p0, Ponto p1);
+
+void draw_lines(Image img, struct Color color, Ponto *p, int n);
+
+void draw_line_strip(Image img, struct Color color, Ponto *p, int n);
+
+void draw_line_loop(Image img, struct Color color, Ponto *p, int n);
+
+void draw_elements_lines(Image img, struct Color color, Ponto *p, const int *indices, int n);
+
+void draw_elements_line_strip(Image img, struct Color color, Ponto *p, const int *indices, int n);
+
+void draw_elements_line_loop(Image img, struct Color color, Ponto *p, const int *indices, int n);
+
+void pintar(Image img, struct Color color, Ponto p);
 
 Image luminancia(Image img);
 

@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/isabela/Área de Trabalho/CG2/Color.c" "/home/isabela/Área de Trabalho/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o"
-  "/home/isabela/Área de Trabalho/CG2/Image.c" "/home/isabela/Área de Trabalho/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o"
-  "/home/isabela/Área de Trabalho/CG2/main.c" "/home/isabela/Área de Trabalho/CG2/cmake-build-debug/CMakeFiles/CG2.dir/main.c.o"
+  "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o"
+  "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o"
+  "/home/isabela/Documentos/Computação Gráfica/CG2/main.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/isabela/Área de Trabalho/CG2/Color.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Color.h
 
-/home/isabela/Área de Trabalho/CG2/Image.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Image.h
 
-/home/isabela/Área de Trabalho/CG2/main.c
+/home/isabela/Documentos/Computação Gráfica/CG2/main.c
 stdio.h
 -
 Image.h
-/home/isabela/Área de Trabalho/CG2/Image.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Image.h
 Color.h
-/home/isabela/Área de Trabalho/CG2/Color.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Color.h
 
