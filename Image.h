@@ -9,7 +9,7 @@ typedef struct Image
 
 typedef struct ponto
 {
-    int x, y;
+    float x, y;
 } Ponto;
 
 Image newImage(int h, int w);
@@ -20,9 +20,15 @@ Image loadImage(const char *filename);
 
 void initImage(Image img, struct Color color);
 
+void savePng(const char *filename, Image img);
+
 struct Color *pixel(Image img, int x, int y);
 
-void savePng(const char *filename, Image img);
+void pintar(Image img, struct Color color, Ponto p);
+
+Image luminancia(Image img);
+
+Image combinacaoImg(Image A, Image B, float t);
 
 void drawRetangulo(Image img, struct Color color, int x1, int y1, int x2, int y2);
 
@@ -42,10 +48,10 @@ void draw_elements_line_strip(Image img, struct Color color, Ponto *p, const int
 
 void draw_elements_line_loop(Image img, struct Color color, Ponto *p, const int *indices, int n);
 
-void pintar(Image img, struct Color color, Ponto p);
+void draw_circle(Image img, struct Color color, int xc, int yc, int R);
 
-Image luminancia(Image img);
+void draw_triangle(Image img, struct Color color, Ponto *p);
 
-Image combinacaoImg(Image A, Image B, float t);
+void barycentric(Ponto p, Ponto *t, float *b);
 
 #endif //CG2_IMAGE_H

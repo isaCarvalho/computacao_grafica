@@ -15,24 +15,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.c" beforeDir="false" afterPath="$PROJECT_DIR$/Image.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CG2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CG2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CG2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/main.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -51,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+            <state>
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#58#505#0" />
@@ -61,43 +44,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Image.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            <state relative-caret-position="1196">
+              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="962">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state>
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="e#112#140#0" expanded="true" />
-                <element signature="e#165#185#0" />
-                <element signature="e#165#346#0" />
-                <element signature="e#348#475#0" />
-                <element signature="e#477#928#0" />
-                <element signature="e#930#1129#0" />
-                <element signature="e#1131#1351#0" />
-                <element signature="e#1353#1404#0" />
-                <element signature="e#1406#1457#0" />
-                <element signature="e#1459#1659#0" />
-                <element signature="e#1661#2031#0" />
-                <element signature="e#2033#2415#0" />
-                <element signature="e#2417#2520#0" />
-                <element signature="e#2576#4044#0" />
-                <element signature="e#4098#4348#0" />
-                <element signature="e#5132#5382#0" />
-                <element signature="e#4602#4665#0" />
-                <element signature="e#5024#5213#0" />
-                <element signature="e#5215#5403#0" />
-                <element signature="e#5405#5593#0" />
-                <element signature="e#4826#5324#0" />
-                <element signature="e#4965#5274#1" />
+                <element signature="e#219#270#0" />
+                <element signature="e#272#323#0" />
+                <element signature="e#3867#6083#0" />
+                <element signature="e#6085#6241#0" />
+                <element signature="e#6243#6401#0" />
+                <element signature="e#6403#6547#0" />
+                <element signature="e#6549#6738#0" />
+                <element signature="e#6740#6933#0" />
+                <element signature="e#6935#7144#0" />
+                <element signature="e#7146#7899#0" />
               </folding>
             </state>
           </provider>
@@ -106,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
+            <state>
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -115,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
+            <state>
               <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
             </state>
           </provider>
@@ -133,16 +105,16 @@
         <option value="$PROJECT_DIR$/Color.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Image.h" />
-        <option value="$PROJECT_DIR$/Image.c" />
         <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/Image.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
-    <option name="width" value="1366" />
-    <option name="height" value="696" />
+    <option name="width" value="678" />
+    <option name="height" value="593" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -150,7 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,6 +133,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +145,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -230,7 +202,10 @@
       <workItem from="1554573827009" duration="74000" />
       <workItem from="1554736622168" duration="911000" />
       <workItem from="1554819150906" duration="5822000" />
-      <workItem from="1554986895342" duration="8782000" />
+      <workItem from="1554986895342" duration="11400000" />
+      <workItem from="1555008283806" duration="155000" />
+      <workItem from="1555010001307" duration="1986000" />
+      <workItem from="1555012057263" duration="124000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionado filtro de luminancia para RGB">
       <created>1553631300101</created>
@@ -246,18 +221,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553632383017</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Rasterização de retas">
+      <created>1554995707372</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1554995707372</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52555000" />
+    <option name="totallyTimeSpent" value="57438000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.26952788" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27348486" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.329806" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49924242" weight="0.32627866" />
@@ -266,7 +248,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32627866" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2239859" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.2239859" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39858907" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -308,7 +290,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adicionado filtro de luminancia para RGB" />
     <MESSAGE value="Adicionado combinação de duas imagens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado combinação de duas imagens" />
+    <MESSAGE value="Rasterização de retas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rasterização de retas" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/stb_image_write.h">
@@ -330,31 +313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Color.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
+        <state>
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#58#505#0" />
@@ -364,32 +326,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Image.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="962">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state>
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding>
             <element signature="e#112#140#0" expanded="true" />
-            <element signature="e#165#185#0" />
-            <element signature="e#165#346#0" />
-            <element signature="e#348#475#0" />
-            <element signature="e#477#928#0" />
-            <element signature="e#930#1129#0" />
-            <element signature="e#1131#1351#0" />
-            <element signature="e#1353#1404#0" />
-            <element signature="e#1406#1457#0" />
-            <element signature="e#1459#1659#0" />
-            <element signature="e#1661#2031#0" />
-            <element signature="e#2033#2415#0" />
-            <element signature="e#2417#2520#0" />
-            <element signature="e#2576#4044#0" />
-            <element signature="e#4098#4348#0" />
-            <element signature="e#5132#5382#0" />
-            <element signature="e#4602#4665#0" />
-            <element signature="e#5024#5213#0" />
-            <element signature="e#5215#5403#0" />
-            <element signature="e#5405#5593#0" />
-            <element signature="e#4826#5324#0" />
-            <element signature="e#4965#5274#1" />
+            <element signature="e#219#270#0" />
+            <element signature="e#272#323#0" />
+            <element signature="e#3867#6083#0" />
+            <element signature="e#6085#6241#0" />
+            <element signature="e#6243#6401#0" />
+            <element signature="e#6403#6547#0" />
+            <element signature="e#6549#6738#0" />
+            <element signature="e#6740#6933#0" />
+            <element signature="e#6935#7144#0" />
+            <element signature="e#7146#7899#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Color.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Color.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
         </state>
       </provider>
     </entry>

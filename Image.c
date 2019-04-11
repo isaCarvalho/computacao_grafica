@@ -12,6 +12,30 @@ int modulo(int x)
     return x < 0 ? x*(-1) : x;
 }
 
+int max(int a, int b)
+{
+    return a > b ? a : b;
+}
+
+int min(int a, int b)
+{
+    return a < b ? a : b;
+}
+
+float areaTri(Ponto a, Ponto b, Ponto c)
+{
+    return (float) ((b.x - a.x)*(b.y + a.y) + (c.x - b.x)*(c.y+b.y) + (a.x - c.x)*(a.y + c.y))/2;
+}
+
+void barycentric(Ponto p, Ponto *t, float *b)
+{
+    float a = areaTri(t[0], t[1], t[2]);
+
+    b[0] = areaTri(p, t[1], t[2]) / a;
+    b[1] = areaTri(t[0], p, t[2]) / a;
+    b[2] = areaTri(t[0], t[1], p) / a;
+}
+
 /**
  * Função que cria uma imagem
  * @param h
@@ -78,16 +102,6 @@ void savePng(const char *filename, Image img)
     stbi_write_png(filename, img.w, img.h, 3, img.data, 0);
 }
 
-int max(int a, int b)
-{
-    return a > b ? a : b;
-}
-
-int min(int a, int b)
-{
-    return a < b ? a : b;
-}
-
 /**
  * Função que retorna um ponteiro para a cor de um pixel da imagem
  * @param img
@@ -98,6 +112,68 @@ int min(int a, int b)
 Color *pixel(Image img, int x, int y)
 {
     return img.data + (img.w*y+x);
+}
+
+
+/**
+ * Função que pinta um pixel da imagem
+ * @param img
+ * @param color
+ * @param x
+ * @paragm y
+ */
+void pintar(Image img, Color color, Ponto p)
+{
+    Color *px = pixel(img, p.x, p.y);
+    *px = color;
+}
+
+/**
+ * Função que aplica o filtro luminancia a uma imagem
+ * @param img
+ * @return
+ */
+Image luminancia(Image img)
+{
+    Image imgl = newImage(img.h, img.w);
+
+    for (int i = 0; i < img.w*img.h; i++)
+    {
+        float r = (float) 0.176*img.data[i].r;
+        float g = (float) 0.810*img.data[i].g;
+        float b = (float) 0.011*img.data[i].b;
+
+        Byte v = clamp(r+g+b, 0, 255);
+
+        imgl.data[i].r = v;
+        imgl.data[i].g = v;
+        imgl.data[i].b = v;
+    }
+
+    return imgl;
+}
+
+/**
+ * Função que retorna uma nova imagem que é combinacao de outras duas
+ * @param A
+ * @param B
+ * @param t
+ * @return
+ */
+Image combinacaoImg(Image A, Image B, float t)
+{
+    Image img = newImage(A.h, B.h);
+
+    for (int i = 0; i < A.h; i++)
+    {
+        for (int j = 0; j < A.w; j++)
+        {
+            Ponto p = {i, j};
+            pintar(img, lerp(t, *pixel(A, i, j), *pixel(B, i, j)), p);
+        }
+    }
+
+    return img;
 }
 
 /**
@@ -119,14 +195,6 @@ void drawRetangulo(Image img, Color color, int x1, int y1, int x2, int y2)
         }
 }
 
-/**
- * Função que pinta um pixel da imagem
- * @param img
- * @param color
- * @param x
- * @paragm y
- */
-
 void drawFunction(Image img, Color color, int funcao(int, int))
 {
     for (int i = 0; i < img.w; i++)
@@ -136,12 +204,6 @@ void drawFunction(Image img, Color color, int funcao(int, int))
                 Ponto p = {i, j};
                 pintar(img, color, p);
             }
-}
-
-void pintar(Image img, Color color, Ponto p)
-{
-    Color *px = pixel(img, p.x, p.y);
-    *px = color;
 }
 
 void draw_line(Image img, Color color, Ponto p0, Ponto p1)
@@ -303,50 +365,61 @@ void draw_elements_line_loop(Image img, Color color, Ponto *p, const int *indice
     draw_line(img, color, p[indices[n-1]], p[indices[0]]);
 }
 
-/**
- * Função que aplica o filtro luminancia a uma imagem
- * @param img
- * @return
- */
-Image luminancia(Image img)
+void draw_circle(Image img, Color color, int xc, int yc, int R)
 {
-    Image imgl = newImage(img.h, img.w);
+    int y = R;
+    int d = 1-R;
 
-    for (int i = 0; i < img.w*img.h; i++)
+    for (int x = 0; x <= y; x++)
     {
-        float r = (float) 0.176*img.data[i].r;
-        float g = (float) 0.810*img.data[i].g;
-        float b = (float) 0.011*img.data[i].b;
+        Ponto oc[8] =
+                {
+                        {xc+x, yc+y},
+                        {yc+y, xc+x},
+                        {xc+x, yc-y},
+                        {yc-y, xc+x},
+                        {xc-x, yc+y},
+                        {yc+y, xc-x},
+                        {xc-x, yc-y},
+                        {yc-y, xc-x}
+                };
 
-        Byte v = clamp(r+g+b, 0, 255);
-
-        imgl.data[i].r = v;
-        imgl.data[i].g = v;
-        imgl.data[i].b = v;
-    }
-
-    return imgl;
-}
-
-/**
- * Função que retorna uma nova imagem que é combinacao de outras duas
- * @param A
- * @param B
- * @param t
- * @return
- */
-Image combinacaoImg(Image A, Image B, float t)
-{
-    Image img = newImage(A.h, B.h);
-
-    for (int i = 0; i < A.h; i++)
-    {
-        for (int j = 0; j < A.w; j++)
+        for (int j = 0; j < 8; j++)
         {
-            Ponto p = {i, j};
-            pintar(img, lerp(t, *pixel(A, i, j), *pixel(B, i, j)), p);
+            pintar(img, color, oc[j]);
+        }
+
+        if (d > 0)
+        {
+            d += 2*x - 2*y + 5;
+            y--;
+        }
+        else
+        {
+            d += 2 * x + 3;
         }
     }
+}
 
-    return img;
+void draw_triangle(Image img, Color color, Ponto *p)
+{
+    int x0 = min(p[0].x, min(p[1].x, p[2].x));
+    int x1 = max(p[0].x, max(p[1].x, p[2].x));
+
+    int y0 = min(p[0].y, min(p[1].y, p[2].y));
+    int y1 = max(p[0].y, max(p[1].y, p[2].y));
+
+    float b[3];
+
+    for (int i = x0; i < x1; i++)
+    {
+        for (int j = y0; j < y1; j++)
+        {
+            Ponto xy = {i, j};
+            barycentric(xy, p, b);
+
+            if (b[0] >= 0 && b[0] <= 1 && b[1] >= 0 && b[1] <= 1 && b[2] >= 0 && b[2] <= 1)
+                pintar(img, color, xy);
+        }
+    }
 }

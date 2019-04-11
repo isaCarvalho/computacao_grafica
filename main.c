@@ -56,43 +56,22 @@ int line(int x, int y)
 
 int main()
 {
-    Image img = newImage(800, 800);
+    Image img = newImage(600, 800);
 
     Color branco = {255, 255, 255}, vermelho = {255, 0, 0};
 
     initImage(img, branco);
 
-    Ponto r1[7] =
-            {
-                    {100, 700},
-                    {200, 700},
-                    {300, 700},
-                    {400, 700},
-                    {500, 700},
-                    {600, 700},
-                    {700, 700}
-            };
+    Ponto p[] = {
+            {88, 228},
+            {465, 20},
+            {658, 431}
+    };
 
-    Ponto r2[7] =
-            {
-                    {100, 100},
-                    {200, 100},
-                    {300, 100},
-                    {400, 100},
-                    {500, 100},
-                    {600, 100},
-                    {700, 100}
-            };
 
-    for (int i = 0; i < 7; i++)
-    {
-        for (int j = 0; j < 7; j++)
-        {
-            draw_line(img, vermelho, r1[i], r2[j]);
-        }
-    }
+    draw_triangle(img, vermelho, p);
 
-    savePng("retas_circulares.png", img);
+    savePng("triangulo.png", img);
 
     return 0;
 }
