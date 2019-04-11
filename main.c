@@ -12,11 +12,11 @@ void xadrez(Image img)
 
     for(int j = 0; j < img.h; j += 200)
         for(int i = 0; i < img.w; i += 200)
-            drawRetangulo(img, branco, i, j, i+100, j+100);
+            draw_rectangle(img, branco, i, j, i + 100, j + 100);
 
     for(int j = 100; j < img.h; j += 200)
         for(int i = 100; i < img.w; i += 200)
-            drawRetangulo(img, branco, i, j, i+100, j+100);
+            draw_rectangle(img, branco, i, j, i + 100, j + 100);
 
     savePng("xadrez.png", img);
 }
@@ -33,7 +33,7 @@ void imagemBonitinha(Image img)
         {
             float u = (float) i/(img.w-1);
             Ponto p = {i, j};
-            pintar(img, interpolacaoBilinear(u, v, A, B, C, D), p);
+            draw_pixel(img, interpolacaoBilinear(u, v, A, B, C, D), p);
         }
     }
 
@@ -56,20 +56,22 @@ int line(int x, int y)
 
 int main()
 {
-    Image img = newImage(600, 800);
+    Image img = newImage(800, 600);
 
     Color branco = {255, 255, 255}, vermelho = {255, 0, 0};
 
     initImage(img, branco);
 
     Ponto p[] = {
-            {88, 228},
-            {465, 20},
-            {658, 431}
+            {400, 200},
+            {200, 100},
+            {100, 300},
+            {300, 400},
+            {600, 500},
+            {700, 100}
     };
 
-
-    draw_triangle(img, vermelho, p);
+    draw_triangle_fan(img, vermelho, p, 6);
 
     savePng("triangulo.png", img);
 

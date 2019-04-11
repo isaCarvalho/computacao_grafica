@@ -3,7 +3,7 @@
 
 typedef struct Image
 {
-    int h, w;
+    int w, h;
     struct Color *data;
 } Image;
 
@@ -22,17 +22,17 @@ void initImage(Image img, struct Color color);
 
 void savePng(const char *filename, Image img);
 
-struct Color *pixel(Image img, int x, int y);
-
-void pintar(Image img, struct Color color, Ponto p);
+struct Color *pixel(Image img, float x, float y);
 
 Image luminancia(Image img);
 
 Image combinacaoImg(Image A, Image B, float t);
 
-void drawRetangulo(Image img, struct Color color, int x1, int y1, int x2, int y2);
+void draw_pixel(Image img, struct Color color, Ponto p);
 
-void drawFunction(Image img, struct Color color, int funcao(int, int));
+void draw_rectangle(Image img, struct Color color, int x1, int y1, int x2, int y2);
+
+void draw_function(Image img, struct Color color, int funcao(int, int));
 
 void draw_line(Image img, struct Color color, Ponto p0, Ponto p1);
 
@@ -51,6 +51,12 @@ void draw_elements_line_loop(Image img, struct Color color, Ponto *p, const int 
 void draw_circle(Image img, struct Color color, int xc, int yc, int R);
 
 void draw_triangle(Image img, struct Color color, Ponto *p);
+
+void draw_triangles(Image img, struct Color color, Ponto *p, int n);
+
+void draw_triangle_strip(Image img, struct Color color, Ponto *p, int n);
+
+void draw_triangle_fan(Image img, struct Color color, Ponto *p, int n);
 
 void barycentric(Ponto p, Ponto *t, float *b);
 

@@ -12,9 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6dfdf20-1c25-4285-881b-a9ed0080def5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.c" beforeDir="false" afterPath="$PROJECT_DIR$/Image.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -31,24 +33,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="260">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#58#505#0" />
+                <element signature="e#956#1054#0" />
+                <element signature="e#1056#1129#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+            <state relative-caret-position="520">
+              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -56,20 +60,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="5865">
+              <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
               <folding>
-                <element signature="e#112#140#0" expanded="true" />
-                <element signature="e#219#270#0" />
-                <element signature="e#272#323#0" />
-                <element signature="e#3867#6083#0" />
-                <element signature="e#6085#6241#0" />
-                <element signature="e#6243#6401#0" />
-                <element signature="e#6403#6547#0" />
-                <element signature="e#6549#6738#0" />
-                <element signature="e#6740#6933#0" />
-                <element signature="e#6935#7144#0" />
-                <element signature="e#7146#7899#0" />
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#111#139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="288">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -87,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="-505">
+              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -205,7 +200,7 @@
       <workItem from="1554986895342" duration="11400000" />
       <workItem from="1555008283806" duration="155000" />
       <workItem from="1555010001307" duration="1986000" />
-      <workItem from="1555012057263" duration="124000" />
+      <workItem from="1555012057263" duration="4272000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionado filtro de luminancia para RGB">
       <created>1553631300101</created>
@@ -228,11 +223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554995707372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rasterização de circunferencias e triangulos">
+      <created>1555012258014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555012258014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57438000" />
+    <option name="totallyTimeSpent" value="61586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
@@ -245,10 +247,10 @@
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49924242" weight="0.32627866" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5007576" side_tool="true" weight="0.32804233" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32627866" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32527882" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.2239859" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.22304833" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39858907" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -291,7 +293,8 @@
     <MESSAGE value="Adicionado filtro de luminancia para RGB" />
     <MESSAGE value="Adicionado combinação de duas imagens" />
     <MESSAGE value="Rasterização de retas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rasterização de retas" />
+    <MESSAGE value="Rasterização de circunferencias e triangulos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rasterização de circunferencias e triangulos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/stb_image_write.h">
@@ -313,55 +316,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
+    <entry file="file://$PROJECT_DIR$/Image.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#58#505#0" />
-          </folding>
+        <state relative-caret-position="520">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Image.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="5865">
+          <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
           <folding>
-            <element signature="e#112#140#0" expanded="true" />
-            <element signature="e#219#270#0" />
-            <element signature="e#272#323#0" />
-            <element signature="e#3867#6083#0" />
-            <element signature="e#6085#6241#0" />
-            <element signature="e#6243#6401#0" />
-            <element signature="e#6403#6547#0" />
-            <element signature="e#6549#6738#0" />
-            <element signature="e#6740#6933#0" />
-            <element signature="e#6935#7144#0" />
-            <element signature="e#7146#7899#0" />
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#111#139#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Color.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="288">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Color.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="-505">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Image.h">
+    <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        <state relative-caret-position="260">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#58#505#0" />
+            <element signature="e#956#1054#0" />
+            <element signature="e#1056#1129#0" />
+          </folding>
         </state>
       </provider>
     </entry>
