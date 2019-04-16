@@ -48,6 +48,5 @@ Color interpolacaoBilinear(float u, float v, Color A, Color B, Color C, Color D)
 {
     Color AB = lerp(u, A, B);
     Color CD = lerp(u, C, D);
-
     return lerp(v, AB, CD);
 }

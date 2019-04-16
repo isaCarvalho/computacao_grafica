@@ -399,7 +399,7 @@ void draw_circle(Image img, Color color, int xc, int yc, int R)
     }
 }
 
-void draw_triangle(Image img, Color color, Ponto *p)
+void draw_triangle(Image img, Color *c, Ponto *p)
 {
     int x0 = (int) min(p[0].x, min(p[1].x, p[2].x));
     int x1 = (int) max(p[0].x, max(p[1].x, p[2].x));
@@ -417,31 +417,62 @@ void draw_triangle(Image img, Color color, Ponto *p)
             barycentric(_p, p, b);
 
             if (b[0] >= 0 && b[0] <= 1 && b[1] >= 0 && b[1] <= 1 && b[2] >= 0 && b[2] <= 1)
-                draw_pixel(img, color, _p);
+            {
+                Color _c;
+                _c.r = clamp(b[0]*c[0].r + b[1]*c[1].r + b[2]*c[2].r, 0, 255);
+                _c.g = clamp(b[0]*c[0].g + b[1]*c[1].g + b[2]*c[2].g, 0, 255);
+                _c.b = clamp(b[0]*c[0].b + b[1]*c[1].b + b[2]*c[2].b, 0, 255);
+
+                draw_pixel(img, _c, _p);
+            }
         }
     }
 }
 
-void draw_triangles(Image img, Color color, Ponto *p, int n)
+void draw_triangles(Image img, Color *color, Ponto *p, int n)
 {
     for (int i = 0; i < n; i += 3)
-        draw_triangle(img, color, p+i);
+        draw_triangle(img, color+i, p+i);
 }
 
-void draw_triangle_strip(Image img, Color color, Ponto *p, int n)
+void draw_triangle_strip(Image img, Color *color, Ponto *p, int n)
 {
     for (int i = 0; i < n; i++)
-        draw_triangle(img, color, p+i);
+        draw_triangle(img, color+i, p+i);
 }
 
-void draw_triangle_fan(Image img, Color color, Ponto *p, int n)
+void draw_triangle_fan(Image img, Color *c, Ponto *p, int n)
 {
     Ponto _p[3] = {p[0]};
+    Color _c[3] = {c[0]};
 
-    for (int i = 1; i < n-2; i+=2)
+    for (int i = 1; i < n-1; i++)
     {
         _p[1] = p[i];
         _p[2] = p[i+1];
-        draw_triangle(img, color, _p);
+
+        _c[1] = c[i];
+        _c[2] = c[i+1];
+
+        draw_triangle(img, _c, _p);
+    }
+}
+
+void draw_elements_triangles(Image img, Color *c, Ponto *p, const int *indices, int n)
+{
+    Ponto _p[3];
+    Color _c[3];
+
+    for (int i = 0; i < n-2; i += 3)
+    {
+        _p[0] = p[indices[i]];
+        _p[1] = p[indices[i+1]];
+        _p[2] = p[indices[i+2]];
+
+        _c[0] = c[indices[i]];
+        _c[1] = c[indices[i+1]];
+        _c[2] = c[indices[i+2]];
+
+        draw_triangle(img, _c, _p);
     }
 }

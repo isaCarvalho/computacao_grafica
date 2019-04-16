@@ -58,22 +58,35 @@ int main()
 {
     Image img = newImage(800, 600);
 
-    Color branco = {255, 255, 255}, vermelho = {255, 0, 0};
+    Color branco = {255, 255, 255};
 
     initImage(img, branco);
 
     Ponto p[] = {
-            {400, 200},
-            {200, 100},
-            {100, 300},
-            {300, 400},
-            {600, 500},
-            {700, 100}
+            {193, 66},
+            {259, 139},
+            {340, 54},
+            {176, 220},
+            {336, 212},
+            {261, 311}
     };
 
-    draw_triangle_fan(img, vermelho, p, 6);
+    Color c[] = {
+            {255, 0, 0},
+            {0, 255, 0},
+            {0, 0, 255},
+            {255, 0, 255},
+            {0, 255, 255},
+            {0, 0, 255}
+    };
+
+    int indices[] = {0, 3, 1,  1, 3, 4,  1, 4, 2,  3, 5, 4};
+
+    draw_elements_triangles(img, c, p, indices, 12);
 
     savePng("triangulo.png", img);
+
+    freeImage(img);
 
     return 0;
 }

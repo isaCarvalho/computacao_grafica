@@ -12,11 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6dfdf20-1c25-4285-881b-a9ed0080def5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Color.c" beforeDir="false" afterPath="$PROJECT_DIR$/Color.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.c" beforeDir="false" afterPath="$PROJECT_DIR$/Image.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
@@ -36,13 +37,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="182">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#58#505#0" />
-                <element signature="e#956#1054#0" />
-                <element signature="e#1056#1129#0" />
+                <element signature="e#58#515#0" />
+                <element signature="e#517#968#0" />
+                <element signature="e#970#1068#0" />
+                <element signature="e#1070#1143#0" />
               </folding>
             </state>
           </provider>
@@ -51,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            <state relative-caret-position="234">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -60,11 +62,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5865">
-              <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
+            <state relative-caret-position="53">
+              <caret line="460" column="66" selection-start-line="460" selection-start-column="66" selection-end-line="460" selection-end-column="66" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#111#139#0" expanded="true" />
+                <element signature="e#165#346#0" />
+                <element signature="e#348#475#0" />
+                <element signature="e#477#928#0" />
+                <element signature="e#930#1130#0" />
+                <element signature="e#1132#1351#0" />
+                <element signature="e#1353#1409#0" />
+                <element signature="e#1411#1468#0" />
+                <element signature="e#1470#1527#0" />
+                <element signature="e#1529#1671#0" />
+                <element signature="e#1673#1881#0" />
+                <element signature="e#1883#2092#0" />
+                <element signature="e#2094#2303#0" />
+                <element signature="e#2305#2779#0" />
+                <element signature="e#2781#3219#0" />
+                <element signature="e#3221#3596#0" />
+                <element signature="e#3598#3882#0" />
+                <element signature="e#3884#6132#0" />
+                <element signature="e#6134#6290#0" />
+                <element signature="e#6292#6450#0" />
+                <element signature="e#6452#6596#0" />
+                <element signature="e#6789#6982#0" />
+                <element signature="e#6984#7193#0" />
+                <element signature="e#7195#7952#0" />
+                <element signature="e#7954#8725#0" />
+                <element signature="e#9367#9509#0" />
+                <element signature="e#9511#9653#0" />
               </folding>
             </state>
           </provider>
@@ -73,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="157">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -82,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Color.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-505">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="209">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -96,12 +123,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Color.h" />
-        <option value="$PROJECT_DIR$/Color.c" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Color.c" />
+        <option value="$PROJECT_DIR$/Color.h" />
+        <option value="$PROJECT_DIR$/Image.c" />
         <option value="$PROJECT_DIR$/Image.h" />
         <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/Image.c" />
       </list>
     </option>
   </component>
@@ -117,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,7 +156,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,7 +227,10 @@
       <workItem from="1554986895342" duration="11400000" />
       <workItem from="1555008283806" duration="155000" />
       <workItem from="1555010001307" duration="1986000" />
-      <workItem from="1555012057263" duration="4272000" />
+      <workItem from="1555012057263" duration="4336000" />
+      <workItem from="1555162834636" duration="6000" />
+      <workItem from="1555356189328" duration="7493000" />
+      <workItem from="1555420820497" duration="3150000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionado filtro de luminancia para RGB">
       <created>1553631300101</created>
@@ -230,27 +260,34 @@
       <option name="project" value="LOCAL" />
       <updated>1555012258014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Rasterização de triangulos">
+      <created>1555016360350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555016360350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61586000" />
+    <option name="totallyTimeSpent" value="72299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.27348486" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2871212" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.329806" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49924242" weight="0.32627866" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5007576" side_tool="true" weight="0.32804233" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32527882" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32368898" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.22304833" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.22242315" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39858907" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -294,7 +331,8 @@
     <MESSAGE value="Adicionado combinação de duas imagens" />
     <MESSAGE value="Rasterização de retas" />
     <MESSAGE value="Rasterização de circunferencias e triangulos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rasterização de circunferencias e triangulos" />
+    <MESSAGE value="Rasterização de triangulos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rasterização de triangulos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/stb_image_write.h">
@@ -316,47 +354,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Image.h">
+    <entry file="file://$PROJECT_DIR$/Color.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5865">
-          <caret line="388" lean-forward="true" selection-start-line="388" selection-end-line="388" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#111#139#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Color.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="157">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Color.c">
+    <entry file="file://$PROJECT_DIR$/Image.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-505">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="53">
+          <caret line="460" column="66" selection-start-line="460" selection-start-column="66" selection-end-line="460" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#165#346#0" />
+            <element signature="e#348#475#0" />
+            <element signature="e#477#928#0" />
+            <element signature="e#930#1130#0" />
+            <element signature="e#1132#1351#0" />
+            <element signature="e#1353#1409#0" />
+            <element signature="e#1411#1468#0" />
+            <element signature="e#1470#1527#0" />
+            <element signature="e#1529#1671#0" />
+            <element signature="e#1673#1881#0" />
+            <element signature="e#1883#2092#0" />
+            <element signature="e#2094#2303#0" />
+            <element signature="e#2305#2779#0" />
+            <element signature="e#2781#3219#0" />
+            <element signature="e#3221#3596#0" />
+            <element signature="e#3598#3882#0" />
+            <element signature="e#3884#6132#0" />
+            <element signature="e#6134#6290#0" />
+            <element signature="e#6292#6450#0" />
+            <element signature="e#6452#6596#0" />
+            <element signature="e#6789#6982#0" />
+            <element signature="e#6984#7193#0" />
+            <element signature="e#7195#7952#0" />
+            <element signature="e#7954#8725#0" />
+            <element signature="e#9367#9509#0" />
+            <element signature="e#9511#9653#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="182">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#58#505#0" />
-            <element signature="e#956#1054#0" />
-            <element signature="e#1056#1129#0" />
+            <element signature="e#58#515#0" />
+            <element signature="e#517#968#0" />
+            <element signature="e#970#1068#0" />
+            <element signature="e#1070#1143#0" />
           </folding>
         </state>
       </provider>
