@@ -221,7 +221,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
             p1 = aux;
         }
 
-        for (int i = p0.x; i <= p1.x; i++)
+        for (int i = (int) p0.x; i <= p1.x; i++)
         {
             Ponto p = {i, p0.y};
             draw_pixel(img, color, p);
@@ -238,7 +238,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
             p1 = aux;
         }
 
-        for (int i = p0.y; i <= p1.y; i++)
+        for (int i = (int) p0.y; i <= p1.y; i++)
         {
             Ponto p = {p0.x, i};
             draw_pixel(img, color, p);
@@ -248,7 +248,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     // Reta y = +-x;
     else if (modulo(p1.x - p0.x) == modulo(p1.y - p0.y))
     {
-        for (int i = p0.x, j = p0.y; i <= p1.x; i++)
+        for (int i = (int) p0.x, j = (int) p0.y; i <= p1.x; i++)
         {
             Ponto p = {i, j};
             draw_pixel(img, color, p);
@@ -272,9 +272,9 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
 
         int D = 2*dy - dx;
 
-        int y = p0.y;
+        int y = (int) p0.y;
 
-        for (int i = p0.x; i <= p1.x; i++)
+        for (int i = (int) p0.x; i <= p1.x; i++)
         {
             Ponto p = {i, y};
             draw_pixel(img, color, p);
@@ -302,9 +302,9 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
 
         int D = 2*dx - dy;
 
-        int x = p0.x;
+        int x = (int) p0.x;
 
-        for (int i = p0.y; i <= p1.y; i++)
+        for (int i = (int) p0.y; i <= p1.y; i++)
         {
             Ponto p = {x, i};
             draw_pixel(img, color, p);
