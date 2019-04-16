@@ -20,6 +20,14 @@ stb_image.h
 
 /home/isabela/Documentos/Computação Gráfica/CG2/Image.h
 
+/home/isabela/Documentos/Computação Gráfica/CG2/main.c
+stdio.h
+-
+Image.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Image.h
+Color.h
+/home/isabela/Documentos/Computação Gráfica/CG2/Color.h
+
 /home/isabela/Documentos/Computação Gráfica/CG2/stb_image.h
 stb_image.h
 /home/isabela/Documentos/Computação Gráfica/CG2/stb_image.h
