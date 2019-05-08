@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o"
   "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o"
+  "/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Mathematics.c.o"
   "/home/isabela/Documentos/Computação Gráfica/CG2/main.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 #include "Image.h"
 #include "Color.h"
 
@@ -32,7 +34,7 @@ void imagemBonitinha(Image img)
         for (int i = 0; i < img.w; i++)
         {
             float u = (float) i/(img.w-1);
-            Ponto p = {i, j};
+            vec2 p = {i, j};
             draw_pixel(img, interpolacaoBilinear(u, v, A, B, C, D), p);
         }
     }
@@ -56,36 +58,37 @@ int line(int x, int y)
 
 int main()
 {
-    Image img = newImage(800, 600);
+    int n;
 
+    Image img = newImage(1000, 1000);
     Color branco = {255, 255, 255};
+    Color azul = {0, 0, 255};
 
     initImage(img, branco);
 
-    Ponto p[] = {
-            {193, 66},
-            {259, 139},
-            {340, 54},
-            {176, 220},
-            {336, 212},
-            {261, 311}
+    vec2 P[] = {
+            {1, 0},
+            {0, 1},
+            {-1, 0},
+            {0, -1}
     };
 
-    Color c[] = {
-            {255, 0, 0},
-            {0, 255, 0},
-            {0, 0, 255},
-            {255, 0, 255},
-            {0, 255, 255},
-            {0, 0, 255}
-    };
+    vec2 R[4];
 
-    int indices[] = {0, 3, 1,  1, 3, 4,  1, 4, 2,  3, 5, 4};
+    int t = 2;
+//    for (int t = 1; t <= 10; t++)
+    {
+        float M[2][2] = {
+                {cos((double) t/10), -sin((double) t/10)},
+                {sin((double) t/10), cos((double) t/10)}
+        };
 
-    draw_elements_triangles(img, c, p, indices, 12);
+        multMV2(M, P, 4, R);
 
-    savePng("triangulo.png", img);
+        draw_line_loop(img, azul, R, 4);
+    }
 
+    savePng("rotacao.png", img);
     freeImage(img);
 
     return 0;

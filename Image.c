@@ -41,7 +41,7 @@ Image loadImage(const char *filename)
 
     Image img = newImage(width, height);
 
-    for (int i = 0, j = 0; i < (img.w*img.h); i++, j+=3)
+    for (int i = 0, j = 0; i < (img.w*img.h); i++, j+=nrChannels)
     {
         img.data[i].r = data[j];
         img.data[i].g = data[j+1];
@@ -72,35 +72,6 @@ void savePng(const char *filename, Image img)
     stbi_write_png(filename, img.w, img.h, 3, img.data, 0);
 }
 
-float modulo(float x)
-{
-    return x < 0 ? x*(-1) : x;
-}
-
-float max(float a, float b)
-{
-    return a > b ? a : b;
-}
-
-float min(float a, float b)
-{
-    return a < b ? a : b;
-}
-
-float areaTri(Ponto a, Ponto b, Ponto c)
-{
-    return (float) ((b.x - a.x)*(b.y + a.y) + (c.x - b.x)*(c.y+b.y) + (a.x - c.x)*(a.y + c.y))/2;
-}
-
-void barycentric(Ponto p, Ponto *t, float *b)
-{
-    float a = areaTri(t[0], t[1], t[2]);
-
-    b[0] = areaTri(p, t[1], t[2]) / a;
-    b[1] = areaTri(t[0], p, t[2]) / a;
-    b[2] = areaTri(t[0], t[1], p) / a;
-}
-
 /**
  * Função que retorna um ponteiro para a cor de um pixel da imagem
  * @param img
@@ -120,7 +91,7 @@ Color *pixel(Image img, float x, float y)
  * @param x
  * @paragm y
  */
-void draw_pixel(Image img, Color color, Ponto p)
+void draw_pixel(Image img, Color color, vec2 p)
 {
     Color *px = pixel(img, p.x, p.y);
     *px = color;
@@ -166,7 +137,7 @@ Image combinacaoImg(Image A, Image B, float t)
     {
         for (int j = 0; j < A.w; j++)
         {
-            Ponto p = {i, j};
+            vec2 p = {i, j};
             draw_pixel(img, lerp(t, *pixel(A, i, j), *pixel(B, i, j)), p);
         }
     }
@@ -188,7 +159,7 @@ void draw_rectangle(Image img, Color color, int x1, int y1, int x2, int y2)
     for (int i = x1; i < x2; i++)
         for (int j = y1; j < y2; j++)
         {
-            Ponto p = {i, j};
+            vec2 p = {i, j};
             draw_pixel(img, color, p);
         }
 }
@@ -199,14 +170,13 @@ void draw_function(Image img, Color color, int funcao(int, int))
         for (int j = 0; j < img.h; j++)
             if (funcao(i, j) <= 0)
             {
-                Ponto p = {i, j};
+                vec2 p = {i, j};
                 draw_pixel(img, color, p);
             }
 }
 
-void draw_line(Image img, Color color, Ponto p0, Ponto p1)
+void draw_line(Image img, Color color, vec2 p0, vec2 p1)
 {
-
     float m = (float) modulo(p1.y - p0.y) / modulo(p1.x - p0.x);
     int dx = (int) modulo(p1.x - p0.x);
     int dy = (int) modulo(p1.y - p0.y);
@@ -216,14 +186,14 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     {
         if (p0.x > p1.x)
         {
-            Ponto aux = p0;
+            vec2 aux = p0;
             p0 = p1;
             p1 = aux;
         }
 
         for (int i = (int) p0.x; i <= p1.x; i++)
         {
-            Ponto p = {i, p0.y};
+            vec2 p = {i, p0.y};
             draw_pixel(img, color, p);
         }
     }
@@ -233,14 +203,14 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     {
         if (p0.y > p1.y)
         {
-            Ponto aux = p0;
+            vec2 aux = p0;
             p0 = p1;
             p1 = aux;
         }
 
         for (int i = (int) p0.y; i <= p1.y; i++)
         {
-            Ponto p = {p0.x, i};
+            vec2 p = {p0.x, i};
             draw_pixel(img, color, p);
         }
     }
@@ -250,7 +220,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     {
         for (int i = (int) p0.x, j = (int) p0.y; i <= p1.x; i++)
         {
-            Ponto p = {i, j};
+            vec2 p = {i, j};
             draw_pixel(img, color, p);
 
             if (p0.y >= p1.y)
@@ -265,7 +235,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     {
         if (p0.x > p1.x)
         {
-            Ponto aux = p0;
+            vec2 aux = p0;
             p0 = p1;
             p1 = aux;
         }
@@ -276,7 +246,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
 
         for (int i = (int) p0.x; i <= p1.x; i++)
         {
-            Ponto p = {i, y};
+            vec2 p = {i, y};
             draw_pixel(img, color, p);
 
             if (D > 0)
@@ -295,7 +265,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     {
         if (p0.y > p1.y)
         {
-            Ponto aux = p0;
+            vec2 aux = p0;
             p0 = p1;
             p1 = aux;
         }
@@ -306,7 +276,7 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
 
         for (int i = (int) p0.y; i <= p1.y; i++)
         {
-            Ponto p = {x, i};
+            vec2 p = {x, i};
             draw_pixel(img, color, p);
 
             if (D > 0)
@@ -323,41 +293,41 @@ void draw_line(Image img, Color color, Ponto p0, Ponto p1)
     }
 }
 
-void draw_lines(Image img, Color color, Ponto *p, int n)
+void draw_lines(Image img, Color color, vec2 *p, int n)
 {
     for (int i = 0; i < n-1; i += 2)
     {
-        draw_line(img, color, p[i], p[i + 1]);
+        draw_line(img, color, p[i], p[i+1]);
     }
 }
 
-void draw_line_strip(Image img, Color color, Ponto *p, int n)
+void draw_line_strip(Image img, Color color, vec2 *p, int n)
 {
     for (int i = 0; i < n-1; i++)
     {
-        draw_line(img, color, p[i], p[i + 1]);
+        draw_line(img, color, p[i], p[i+1]);
     }
 }
 
-void draw_line_loop(Image img, Color color, Ponto *p, int n)
+void draw_line_loop(Image img, Color color, vec2 *p, int n)
 {
     draw_line_strip(img, color, p, n);
     draw_line(img, color, p[n-1], p[0]);
 }
 
-void draw_elements_lines(Image img, Color color, Ponto *p, const int *indices, int n)
+void draw_elements_lines(Image img, Color color, vec2 *p, const int *indices, int n)
 {
     for (int i = 0; i < (n-1); i+=2)
         draw_line(img, color, p[indices[i]], p[indices[i+1]]);
 }
 
-void draw_elements_line_strip(Image img, Color color, Ponto *p, const int *indices, int n)
+void draw_elements_line_strip(Image img, Color color, vec2 *p, const int *indices, int n)
 {
     for (int i = 0; i < (n-1); i++)
         draw_line(img, color, p[indices[i]], p[indices[i+1]]);
 }
 
-void draw_elements_line_loop(Image img, Color color, Ponto *p, const int *indices, int n)
+void draw_elements_line_loop(Image img, Color color, vec2 *p, const int *indices, int n)
 {
     draw_elements_line_strip(img, color, p, indices, n);
     draw_line(img, color, p[indices[n-1]], p[indices[0]]);
@@ -370,7 +340,7 @@ void draw_circle(Image img, Color color, int xc, int yc, int R)
 
     for (int x = 0; x <= y; x++)
     {
-        Ponto oc[8] =
+        vec2 oc[8] =
                 {
                         {xc+x, yc+y},
                         {yc+y, xc+x},
@@ -399,7 +369,7 @@ void draw_circle(Image img, Color color, int xc, int yc, int R)
     }
 }
 
-void draw_triangle(Image img, Color *c, Ponto *p)
+void draw_triangle(Image img, Color *c, vec2 *p)
 {
     int x0 = (int) min(p[0].x, min(p[1].x, p[2].x));
     int x1 = (int) max(p[0].x, max(p[1].x, p[2].x));
@@ -413,7 +383,7 @@ void draw_triangle(Image img, Color *c, Ponto *p)
     {
         for (int j = y0; j < y1; j++)
         {
-            Ponto _p = {i, j};
+            vec2 _p = {i, j};
             barycentric(_p, p, b);
 
             if (b[0] >= 0 && b[0] <= 1 && b[1] >= 0 && b[1] <= 1 && b[2] >= 0 && b[2] <= 1)
@@ -429,21 +399,21 @@ void draw_triangle(Image img, Color *c, Ponto *p)
     }
 }
 
-void draw_triangles(Image img, Color *color, Ponto *p, int n)
+void draw_triangles(Image img, Color *color, vec2 *p, int n)
 {
     for (int i = 0; i < n; i += 3)
         draw_triangle(img, color+i, p+i);
 }
 
-void draw_triangle_strip(Image img, Color *color, Ponto *p, int n)
+void draw_triangle_strip(Image img, Color *color, vec2 *p, int n)
 {
     for (int i = 0; i < n; i++)
         draw_triangle(img, color+i, p+i);
 }
 
-void draw_triangle_fan(Image img, Color *c, Ponto *p, int n)
+void draw_triangle_fan(Image img, Color *c, vec2 *p, int n)
 {
-    Ponto _p[3] = {p[0]};
+    vec2 _p[3] = {p[0]};
     Color _c[3] = {c[0]};
 
     for (int i = 1; i < n-1; i++)
@@ -458,9 +428,9 @@ void draw_triangle_fan(Image img, Color *c, Ponto *p, int n)
     }
 }
 
-void draw_elements_triangles(Image img, Color *c, Ponto *p, const int *indices, int n)
+void draw_elements_triangles(Image img, Color *c, vec2 *p, const int *indices, int n)
 {
-    Ponto _p[3];
+    vec2 _p[3];
     Color _c[3];
 
     for (int i = 0; i < n-2; i += 3)
@@ -474,5 +444,50 @@ void draw_elements_triangles(Image img, Color *c, Ponto *p, const int *indices, 
         _c[2] = c[indices[i+2]];
 
         draw_triangle(img, _c, _p);
+    }
+}
+
+vec2 decasteljau(vec2 *P, float t)
+{
+    vec2 Q[3] = {
+            soma(mult(P[0], (1-t)), mult(P[1], t)),
+            soma(mult(P[1], (1-t)), mult(P[2], t)),
+            soma(mult(P[2], (1-t)), mult(P[3], t))
+    };
+
+    vec2 R[2] = {
+            soma(mult(Q[0], (1-t)), mult(Q[1], t)),
+            soma(mult(Q[1], (1-t)), mult(Q[2], t))
+    };
+
+    return soma(mult(R[0], (1-t)), mult(R[1], t));
+}
+
+vec2 bezier_cubica(vec2 *p, float t)
+{
+    float a0 = (1-t)*(1-t)*(1-t);
+    float a1 = 3*t*(1-t)*(1-t);
+    float a2 = 3*t*t*(1-t);
+    float a3 = t*t*t;
+
+    vec2 c = mult(p[0], a0);
+    c = soma(c, mult(p[1], a1));
+    c = soma(c, mult(p[2], a2));
+    c = soma(c, mult(p[3], a3));
+
+    return c;
+}
+
+void draw_bezier_splines(Image img, Color c, vec2 *p, int n)
+{
+    for (int j = 0; j < n-1; j+=3)
+    {
+        int N = 50;
+        vec2 C[N];
+        for(int i = 0; i < N; i++){
+            float t = i/(N-1.0);
+            C[i] = bezier_cubica(p+j, t);
+        }
+        draw_line_strip(img, c, C, N);
     }
 }

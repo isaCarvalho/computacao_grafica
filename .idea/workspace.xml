@@ -12,10 +12,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6dfdf20-1c25-4285-881b-a9ed0080def5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mathematics.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mathematics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image.c" beforeDir="false" afterPath="$PROJECT_DIR$/Image.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Image.h" beforeDir="false" afterPath="$PROJECT_DIR$/Image.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CG2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CG2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CG2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,24 +55,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+            <state relative-caret-position="117">
+              <caret line="81" column="58" lean-forward="true" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#58#515#0" />
-                <element signature="e#517#968#0" />
-                <element signature="e#970#1068#0" />
-                <element signature="e#1070#1143#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="78">
+              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -59,7 +77,16 @@
         <entry file="file://$PROJECT_DIR$/Image.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mathematics.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -67,63 +94,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3250">
-              <caret line="478" selection-start-line="478" selection-end-line="478" />
+            <state relative-caret-position="1508">
+              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#165#346#0" />
-                <element signature="e#348#475#0" />
-                <element signature="e#477#928#0" />
-                <element signature="e#930#1130#0" />
-                <element signature="e#1132#1351#0" />
-                <element signature="e#1353#1409#0" />
-                <element signature="e#1411#1468#0" />
-                <element signature="e#1470#1527#0" />
-                <element signature="e#1529#1671#0" />
-                <element signature="e#1673#1881#0" />
-                <element signature="e#1883#2092#0" />
-                <element signature="e#2094#2303#0" />
-                <element signature="e#2305#2779#0" />
-                <element signature="e#2781#3219#0" />
-                <element signature="e#3221#3596#0" />
-                <element signature="e#3598#3882#0" />
-                <element signature="e#3884#6132#0" />
-                <element signature="e#6134#6290#0" />
-                <element signature="e#6292#6450#0" />
-                <element signature="e#6452#6596#0" />
-                <element signature="e#6598#6787#0" />
-                <element signature="e#6789#6982#0" />
-                <element signature="e#6984#7193#0" />
-                <element signature="e#7195#7952#0" />
-                <element signature="e#7954#8725#0" />
-                <element signature="e#9367#9509#0" />
-                <element signature="e#9511#9653#0" />
-                <element signature="e#9655#9882#0" />
-                <element signature="e#9421#9503#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Color.h">
+        <entry file="file://$PROJECT_DIR$/Mathematics.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Color.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1352">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="130">
+              <caret line="5" column="8" selection-start-line="5" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#84#141#0" />
+                <element signature="e#143#200#0" />
+                <element signature="e#202#341#0" />
+                <element signature="e#343#549#0" />
+                <element signature="e#551#625#0" />
+                <element signature="e#627#725#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>draw</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,10 +137,13 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Color.c" />
         <option value="$PROJECT_DIR$/Color.h" />
-        <option value="$PROJECT_DIR$/Image.h" />
-        <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/Image.c" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Mathematics.h.h" />
+        <option value="$PROJECT_DIR$/Image.h" />
+        <option value="$PROJECT_DIR$/Image.c" />
+        <option value="$PROJECT_DIR$/Mathematics.h" />
+        <option value="$PROJECT_DIR$/Mathematics.c" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -153,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +170,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,7 +245,10 @@
       <workItem from="1555012057263" duration="4336000" />
       <workItem from="1555162834636" duration="6000" />
       <workItem from="1555356189328" duration="7493000" />
-      <workItem from="1555420820497" duration="3467000" />
+      <workItem from="1555420820497" duration="4686000" />
+      <workItem from="1555505948421" duration="10492000" />
+      <workItem from="1556819233315" duration="68000" />
+      <workItem from="1557338603804" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="Adicionado filtro de luminancia para RGB">
       <created>1553631300101</created>
@@ -290,18 +299,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555424199478</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add .gitignore">
+      <created>1555424325037</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555424325037</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72616000" />
+    <option name="totallyTimeSpent" value="85662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="696" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2871212" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3007576" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.329806" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49924242" weight="0.32627866" />
@@ -310,9 +325,9 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32368898" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.22242315" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.4358047" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.39858907" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.39783" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -358,7 +373,8 @@
     <MESSAGE value="Rasterização de circunferencias e triangulos" />
     <MESSAGE value="Rasterização de triangulos" />
     <MESSAGE value="Fix warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix warnings" />
+    <MESSAGE value="add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .gitignore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/stb_image_write.h">
@@ -373,56 +389,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Image.h">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3250">
-          <caret line="478" selection-start-line="478" selection-end-line="478" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#165#346#0" />
-            <element signature="e#348#475#0" />
-            <element signature="e#477#928#0" />
-            <element signature="e#930#1130#0" />
-            <element signature="e#1132#1351#0" />
-            <element signature="e#1353#1409#0" />
-            <element signature="e#1411#1468#0" />
-            <element signature="e#1470#1527#0" />
-            <element signature="e#1529#1671#0" />
-            <element signature="e#1673#1881#0" />
-            <element signature="e#1883#2092#0" />
-            <element signature="e#2094#2303#0" />
-            <element signature="e#2305#2779#0" />
-            <element signature="e#2781#3219#0" />
-            <element signature="e#3221#3596#0" />
-            <element signature="e#3598#3882#0" />
-            <element signature="e#3884#6132#0" />
-            <element signature="e#6134#6290#0" />
-            <element signature="e#6292#6450#0" />
-            <element signature="e#6452#6596#0" />
-            <element signature="e#6598#6787#0" />
-            <element signature="e#6789#6982#0" />
-            <element signature="e#6984#7193#0" />
-            <element signature="e#7195#7952#0" />
-            <element signature="e#7954#8725#0" />
-            <element signature="e#9367#9509#0" />
-            <element signature="e#9511#9653#0" />
-            <element signature="e#9655#9882#0" />
-            <element signature="e#9421#9503#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="26">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -433,31 +403,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/Color.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="364">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+        <state relative-caret-position="117">
+          <caret line="81" column="58" lean-forward="true" selection-start-line="81" selection-start-column="58" selection-end-line="81" selection-end-column="58" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#58#515#0" />
-            <element signature="e#517#968#0" />
-            <element signature="e#970#1068#0" />
-            <element signature="e#1070#1143#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/Image.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="234">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mathematics.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mathematics.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="8" selection-start-line="5" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#84#141#0" />
+            <element signature="e#143#200#0" />
+            <element signature="e#202#341#0" />
+            <element signature="e#343#549#0" />
+            <element signature="e#551#625#0" />
+            <element signature="e#627#725#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>

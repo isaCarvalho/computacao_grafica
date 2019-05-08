@@ -90,6 +90,12 @@
 		<Unit filename="/home/isabela/Documentos/Computação Gráfica/CG2/Image.h">
 			<Option target="CG2"/>
 		</Unit>
+		<Unit filename="/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c">
+			<Option target="CG2"/>
+		</Unit>
+		<Unit filename="/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.h">
+			<Option target="CG2"/>
+		</Unit>
 		<Unit filename="/home/isabela/Documentos/Computação Gráfica/CG2/main.c">
 			<Option target="CG2"/>
 		</Unit>
