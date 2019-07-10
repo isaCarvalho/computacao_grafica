@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.13)
-project(CG2 C)
+cmake_minimum_required(VERSION 3.14)
+project(CG2)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 11)
 
-add_executable(CG2 main.c Color.c Color.h Image.c Image.h stb_image.h stb_image_write.h Mathematics.c Mathematics.h)
+add_executable(CG2 main.cpp Color.cpp Color.h Image.cpp Image.h stb_image.h stb_image_write.h Mathematics.cpp Mathematics.h objFile.cpp objFile.h objects.cpp objects.h marchingCubes.h)
 
 target_link_libraries(CG2 m)

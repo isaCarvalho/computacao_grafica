@@ -1,0 +1,105 @@
+int main()
+{
+    Image img = newImage(800, 800, true);
+    Color branco = {255, 255, 255};
+    Color azul = {0, 0, 255};
+    Color vermelho = {255, 82, 82};
+
+    initImage(img, branco);
+
+    /** DESENHA A MALHA TRIANGULAR*/
+    //view
+    vec3 O = {0, 0, 1};
+    vec3 C = {0, 0, 0};
+    vec3 Up = {0, 2, 0};
+    mat4 View = lookAt(O, C, Up);
+
+    //projection
+    float a = (float) img.w/img.h;
+    mat4 Projection = perspective(45, a, 0.1, 1);
+
+    //model3306
+    mat4 Model = rotate_y(0)*rotate_x(0)* translate(-0, -0, -0);
+
+    //projection
+    mat4 M = Projection*View*Model;
+
+    int m = 30, n = 20, N = m*n;
+
+    float u0 = -0.5, u1 = 0.5, du = (u1-u0)/(m), v0 = -0.5, v1 = 0.5, dv = (v1-v0)/(n);
+
+    vec4 P[N];
+    for(int i = 0; i < m; i++){
+        for(int j = 0; j < n; j++){
+            float u = u0 + i*du;
+            float v = v0 + j*dv;
+
+            int ij = i + j*m;
+            P[ij] = {u, v, 0, 1};
+        }
+    }
+
+    int Ni = 2*(3*N - 2*m - 2*n + 1);
+    int indices[Ni];
+
+    int k = 0;
+    for(int i = 0; i < m; i++){
+        for(int j = 0; j < n; j++){
+            int ij = i + j*m;
+            if(i < m-1){
+                indices[k++] = ij;
+                indices[k++] = ij+1;
+            }
+
+            if(j < n-1){
+                indices[k++] = ij;
+                indices[k++] = ij+m;
+            }
+
+            if(i < m-1 && j < n-1){
+                indices[k++] = ij+1;
+                indices[k++] = ij+m;
+            }
+        }
+    }
+
+    vec4 MP2[N];
+    multMV4(M, P, N, MP2);
+
+    draw_elements_line_strip(img, vermelho, MP2, indices, Ni);
+
+    savePng("toro.png", img);
+    freeImage(img);
+
+    return 0;
+}
+
+/** ESFERA */
+
+Image img = newImage(800, 800, true);
+    Color branco = {255, 255, 255};
+    Color azul = {0, 0, 255};
+    Color vermelho = {255, 82, 82};
+
+    initImage(img, branco);
+
+    /** DESENHA A MALHA TRIANGULAR*/
+//    view
+    mat4 View = lookAt({0,0,20}, {1,0,0}, {0,1,0});
+
+    //projection
+    float a = (float) img.w/img.h;
+    mat4 Projection = perspective(45, a, 10, 50);
+
+    //model3306
+    mat4 Model = scale(1.6, 1, 1) *rotate_x(-2.3)* translate(0, -3, 0) * rotate_z(-0.50);
+
+    //projection
+    mat4 M = Projection*View*Model;
+
+    draw_model(img, vermelho, M, 30, 30, -5, 5, -5, 5);
+
+    savePng("esferaColorida.png", img);
+    freeImage(img);
+}
+

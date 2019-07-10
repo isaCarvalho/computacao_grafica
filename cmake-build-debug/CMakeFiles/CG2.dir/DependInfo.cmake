@@ -1,18 +1,20 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Color.c.o"
-  "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Image.c.o"
-  "/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Mathematics.c.o"
-  "/home/isabela/Documentos/Computação Gráfica/CG2/main.c" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/main.c.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/isabela/Documentos/UFF/CG2/Color.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Color.cpp.o"
+  "/home/isabela/Documentos/UFF/CG2/Image.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Image.cpp.o"
+  "/home/isabela/Documentos/UFF/CG2/Mathematics.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/Mathematics.cpp.o"
+  "/home/isabela/Documentos/UFF/CG2/main.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/main.cpp.o"
+  "/home/isabela/Documentos/UFF/CG2/objFile.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/objFile.cpp.o"
+  "/home/isabela/Documentos/UFF/CG2/objects.cpp" "/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/objects.cpp.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

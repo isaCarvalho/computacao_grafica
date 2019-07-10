@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/69/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/69/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/isabela/Documentos/Computação Gráfica/CG2"
+CMAKE_SOURCE_DIR = /home/isabela/Documentos/UFF/CG2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/isabela/Documentos/UFF/CG2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CG2.dir/depend.make
@@ -57,75 +57,105 @@ include CMakeFiles/CG2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/CG2.dir/flags.make
 
-CMakeFiles/CG2.dir/main.c.o: CMakeFiles/CG2.dir/flags.make
-CMakeFiles/CG2.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/CG2.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CG2.dir/main.c.o   -c "/home/isabela/Documentos/Computação Gráfica/CG2/main.c"
+CMakeFiles/CG2.dir/main.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CG2.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/main.cpp.o -c /home/isabela/Documentos/UFF/CG2/main.cpp
 
-CMakeFiles/CG2.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CG2.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/isabela/Documentos/Computação Gráfica/CG2/main.c" > CMakeFiles/CG2.dir/main.c.i
+CMakeFiles/CG2.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/main.cpp > CMakeFiles/CG2.dir/main.cpp.i
 
-CMakeFiles/CG2.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CG2.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/isabela/Documentos/Computação Gráfica/CG2/main.c" -o CMakeFiles/CG2.dir/main.c.s
+CMakeFiles/CG2.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/main.cpp -o CMakeFiles/CG2.dir/main.cpp.s
 
-CMakeFiles/CG2.dir/Color.c.o: CMakeFiles/CG2.dir/flags.make
-CMakeFiles/CG2.dir/Color.c.o: ../Color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/CG2.dir/Color.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CG2.dir/Color.c.o   -c "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c"
+CMakeFiles/CG2.dir/Color.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/Color.cpp.o: ../Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CG2.dir/Color.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/Color.cpp.o -c /home/isabela/Documentos/UFF/CG2/Color.cpp
 
-CMakeFiles/CG2.dir/Color.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CG2.dir/Color.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c" > CMakeFiles/CG2.dir/Color.c.i
+CMakeFiles/CG2.dir/Color.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/Color.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/Color.cpp > CMakeFiles/CG2.dir/Color.cpp.i
 
-CMakeFiles/CG2.dir/Color.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CG2.dir/Color.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/isabela/Documentos/Computação Gráfica/CG2/Color.c" -o CMakeFiles/CG2.dir/Color.c.s
+CMakeFiles/CG2.dir/Color.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/Color.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/Color.cpp -o CMakeFiles/CG2.dir/Color.cpp.s
 
-CMakeFiles/CG2.dir/Image.c.o: CMakeFiles/CG2.dir/flags.make
-CMakeFiles/CG2.dir/Image.c.o: ../Image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/CG2.dir/Image.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CG2.dir/Image.c.o   -c "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c"
+CMakeFiles/CG2.dir/Image.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/Image.cpp.o: ../Image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CG2.dir/Image.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/Image.cpp.o -c /home/isabela/Documentos/UFF/CG2/Image.cpp
 
-CMakeFiles/CG2.dir/Image.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CG2.dir/Image.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c" > CMakeFiles/CG2.dir/Image.c.i
+CMakeFiles/CG2.dir/Image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/Image.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/Image.cpp > CMakeFiles/CG2.dir/Image.cpp.i
 
-CMakeFiles/CG2.dir/Image.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CG2.dir/Image.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/isabela/Documentos/Computação Gráfica/CG2/Image.c" -o CMakeFiles/CG2.dir/Image.c.s
+CMakeFiles/CG2.dir/Image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/Image.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/Image.cpp -o CMakeFiles/CG2.dir/Image.cpp.s
 
-CMakeFiles/CG2.dir/Mathematics.c.o: CMakeFiles/CG2.dir/flags.make
-CMakeFiles/CG2.dir/Mathematics.c.o: ../Mathematics.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/CG2.dir/Mathematics.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CG2.dir/Mathematics.c.o   -c "/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c"
+CMakeFiles/CG2.dir/Mathematics.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/Mathematics.cpp.o: ../Mathematics.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CG2.dir/Mathematics.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/Mathematics.cpp.o -c /home/isabela/Documentos/UFF/CG2/Mathematics.cpp
 
-CMakeFiles/CG2.dir/Mathematics.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CG2.dir/Mathematics.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c" > CMakeFiles/CG2.dir/Mathematics.c.i
+CMakeFiles/CG2.dir/Mathematics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/Mathematics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/Mathematics.cpp > CMakeFiles/CG2.dir/Mathematics.cpp.i
 
-CMakeFiles/CG2.dir/Mathematics.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CG2.dir/Mathematics.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/home/isabela/Documentos/Computação Gráfica/CG2/Mathematics.c" -o CMakeFiles/CG2.dir/Mathematics.c.s
+CMakeFiles/CG2.dir/Mathematics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/Mathematics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/Mathematics.cpp -o CMakeFiles/CG2.dir/Mathematics.cpp.s
+
+CMakeFiles/CG2.dir/objFile.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/objFile.cpp.o: ../objFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CG2.dir/objFile.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/objFile.cpp.o -c /home/isabela/Documentos/UFF/CG2/objFile.cpp
+
+CMakeFiles/CG2.dir/objFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/objFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/objFile.cpp > CMakeFiles/CG2.dir/objFile.cpp.i
+
+CMakeFiles/CG2.dir/objFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/objFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/objFile.cpp -o CMakeFiles/CG2.dir/objFile.cpp.s
+
+CMakeFiles/CG2.dir/objects.cpp.o: CMakeFiles/CG2.dir/flags.make
+CMakeFiles/CG2.dir/objects.cpp.o: ../objects.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CG2.dir/objects.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CG2.dir/objects.cpp.o -c /home/isabela/Documentos/UFF/CG2/objects.cpp
+
+CMakeFiles/CG2.dir/objects.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CG2.dir/objects.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isabela/Documentos/UFF/CG2/objects.cpp > CMakeFiles/CG2.dir/objects.cpp.i
+
+CMakeFiles/CG2.dir/objects.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CG2.dir/objects.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isabela/Documentos/UFF/CG2/objects.cpp -o CMakeFiles/CG2.dir/objects.cpp.s
 
 # Object files for target CG2
 CG2_OBJECTS = \
-"CMakeFiles/CG2.dir/main.c.o" \
-"CMakeFiles/CG2.dir/Color.c.o" \
-"CMakeFiles/CG2.dir/Image.c.o" \
-"CMakeFiles/CG2.dir/Mathematics.c.o"
+"CMakeFiles/CG2.dir/main.cpp.o" \
+"CMakeFiles/CG2.dir/Color.cpp.o" \
+"CMakeFiles/CG2.dir/Image.cpp.o" \
+"CMakeFiles/CG2.dir/Mathematics.cpp.o" \
+"CMakeFiles/CG2.dir/objFile.cpp.o" \
+"CMakeFiles/CG2.dir/objects.cpp.o"
 
 # External object files for target CG2
 CG2_EXTERNAL_OBJECTS =
 
-CG2: CMakeFiles/CG2.dir/main.c.o
-CG2: CMakeFiles/CG2.dir/Color.c.o
-CG2: CMakeFiles/CG2.dir/Image.c.o
-CG2: CMakeFiles/CG2.dir/Mathematics.c.o
+CG2: CMakeFiles/CG2.dir/main.cpp.o
+CG2: CMakeFiles/CG2.dir/Color.cpp.o
+CG2: CMakeFiles/CG2.dir/Image.cpp.o
+CG2: CMakeFiles/CG2.dir/Mathematics.cpp.o
+CG2: CMakeFiles/CG2.dir/objFile.cpp.o
+CG2: CMakeFiles/CG2.dir/objects.cpp.o
 CG2: CMakeFiles/CG2.dir/build.make
 CG2: CMakeFiles/CG2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable CG2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable CG2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CG2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +168,6 @@ CMakeFiles/CG2.dir/clean:
 .PHONY : CMakeFiles/CG2.dir/clean
 
 CMakeFiles/CG2.dir/depend:
-	cd "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/isabela/Documentos/Computação Gráfica/CG2" "/home/isabela/Documentos/Computação Gráfica/CG2" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/isabela/Documentos/UFF/CG2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/isabela/Documentos/UFF/CG2 /home/isabela/Documentos/UFF/CG2 /home/isabela/Documentos/UFF/CG2/cmake-build-debug /home/isabela/Documentos/UFF/CG2/cmake-build-debug /home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CG2.dir/depend
 

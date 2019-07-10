@@ -1,3 +1,3 @@
-/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/CG2.dir
-/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/CG2.dir
+/home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/69/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/69/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/isabela/Documentos/Computação Gráfica/CG2"
+CMAKE_SOURCE_DIR = /home/isabela/Documentos/UFF/CG2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/isabela/Documentos/UFF/CG2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-bui
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/69/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/69/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/isabela/Downloads/CLion-2019.1.4/clion-2019.1.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles /home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/isabela/Documentos/Computação Gráfica/CG2/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabela/Documentos/UFF/CG2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,113 +123,167 @@ CG2/fast:
 	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/build
 .PHONY : CG2/fast
 
-Color.o: Color.c.o
+Color.o: Color.cpp.o
 
 .PHONY : Color.o
 
 # target to build an object file
-Color.c.o:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.c.o
-.PHONY : Color.c.o
+Color.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.cpp.o
+.PHONY : Color.cpp.o
 
-Color.i: Color.c.i
+Color.i: Color.cpp.i
 
 .PHONY : Color.i
 
 # target to preprocess a source file
-Color.c.i:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.c.i
-.PHONY : Color.c.i
+Color.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.cpp.i
+.PHONY : Color.cpp.i
 
-Color.s: Color.c.s
+Color.s: Color.cpp.s
 
 .PHONY : Color.s
 
 # target to generate assembly for a file
-Color.c.s:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.c.s
-.PHONY : Color.c.s
+Color.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Color.cpp.s
+.PHONY : Color.cpp.s
 
-Image.o: Image.c.o
+Image.o: Image.cpp.o
 
 .PHONY : Image.o
 
 # target to build an object file
-Image.c.o:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.c.o
-.PHONY : Image.c.o
+Image.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.cpp.o
+.PHONY : Image.cpp.o
 
-Image.i: Image.c.i
+Image.i: Image.cpp.i
 
 .PHONY : Image.i
 
 # target to preprocess a source file
-Image.c.i:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.c.i
-.PHONY : Image.c.i
+Image.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.cpp.i
+.PHONY : Image.cpp.i
 
-Image.s: Image.c.s
+Image.s: Image.cpp.s
 
 .PHONY : Image.s
 
 # target to generate assembly for a file
-Image.c.s:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.c.s
-.PHONY : Image.c.s
+Image.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Image.cpp.s
+.PHONY : Image.cpp.s
 
-Mathematics.o: Mathematics.c.o
+Mathematics.o: Mathematics.cpp.o
 
 .PHONY : Mathematics.o
 
 # target to build an object file
-Mathematics.c.o:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.c.o
-.PHONY : Mathematics.c.o
+Mathematics.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.cpp.o
+.PHONY : Mathematics.cpp.o
 
-Mathematics.i: Mathematics.c.i
+Mathematics.i: Mathematics.cpp.i
 
 .PHONY : Mathematics.i
 
 # target to preprocess a source file
-Mathematics.c.i:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.c.i
-.PHONY : Mathematics.c.i
+Mathematics.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.cpp.i
+.PHONY : Mathematics.cpp.i
 
-Mathematics.s: Mathematics.c.s
+Mathematics.s: Mathematics.cpp.s
 
 .PHONY : Mathematics.s
 
 # target to generate assembly for a file
-Mathematics.c.s:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.c.s
-.PHONY : Mathematics.c.s
+Mathematics.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/Mathematics.cpp.s
+.PHONY : Mathematics.cpp.s
 
-main.o: main.c.o
+main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.c.o
-.PHONY : main.c.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.c.s
-.PHONY : main.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+objFile.o: objFile.cpp.o
+
+.PHONY : objFile.o
+
+# target to build an object file
+objFile.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objFile.cpp.o
+.PHONY : objFile.cpp.o
+
+objFile.i: objFile.cpp.i
+
+.PHONY : objFile.i
+
+# target to preprocess a source file
+objFile.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objFile.cpp.i
+.PHONY : objFile.cpp.i
+
+objFile.s: objFile.cpp.s
+
+.PHONY : objFile.s
+
+# target to generate assembly for a file
+objFile.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objFile.cpp.s
+.PHONY : objFile.cpp.s
+
+objects.o: objects.cpp.o
+
+.PHONY : objects.o
+
+# target to build an object file
+objects.cpp.o:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objects.cpp.o
+.PHONY : objects.cpp.o
+
+objects.i: objects.cpp.i
+
+.PHONY : objects.i
+
+# target to preprocess a source file
+objects.cpp.i:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objects.cpp.i
+.PHONY : objects.cpp.i
+
+objects.s: objects.cpp.s
+
+.PHONY : objects.s
+
+# target to generate assembly for a file
+objects.cpp.s:
+	$(MAKE) -f CMakeFiles/CG2.dir/build.make CMakeFiles/CG2.dir/objects.cpp.s
+.PHONY : objects.cpp.s
 
 # Help Target
 help:
@@ -252,6 +306,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... objFile.o"
+	@echo "... objFile.i"
+	@echo "... objFile.s"
+	@echo "... objects.o"
+	@echo "... objects.i"
+	@echo "... objects.s"
 .PHONY : help
 
 

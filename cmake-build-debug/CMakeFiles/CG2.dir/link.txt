@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/CG2.dir/main.c.o CMakeFiles/CG2.dir/Color.c.o CMakeFiles/CG2.dir/Image.c.o CMakeFiles/CG2.dir/Mathematics.c.o  -o CG2 -lm 
+/usr/bin/c++  -g   CMakeFiles/CG2.dir/main.cpp.o CMakeFiles/CG2.dir/Color.cpp.o CMakeFiles/CG2.dir/Image.cpp.o CMakeFiles/CG2.dir/Mathematics.cpp.o CMakeFiles/CG2.dir/objFile.cpp.o CMakeFiles/CG2.dir/objects.cpp.o  -o CG2 -lm 
